@@ -27,3 +27,5 @@ git merge feature-local-test
 git remote add origin https://github.com/arasolt/ca1ex2-repo.git
 git push -u origin main
 git pull
+
+git log --oneline --graph --all
