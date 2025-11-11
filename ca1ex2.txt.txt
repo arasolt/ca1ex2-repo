@@ -1,0 +1,29 @@
+All the commands I used on command prompt
+
+git config --global user.name "John Doe"
+git config --global user.email "johndoe@example.com"
+git config --global core.autocrlf false
+
+cd "C:\Users\X00222268\OneDrive - Technological University Dublin\Projects_Labs\CA1"
+mkdir ca1-ex2
+cd ca1-ex2
+git init
+git status
+		On branch master
+git branch -m master main
+git add .
+git status
+
+git commit -m "first commit"
+git branch feature-local-test
+git checkout feature-local-test
+git add cloud.py
+git commit -m "changed cloud.py message"
+git checkout main
+git commit -m "cloud.py 2nd change"
+git status
+git merge feature-local-test
+
+git remote add origin https://github.com/arasolt/ca1ex2-repo.git
+git push -u origin main
+git pull
